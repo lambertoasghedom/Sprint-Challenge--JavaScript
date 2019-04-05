@@ -8,8 +8,6 @@
 */
 
 
-
-
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
   * Create a function named multiply that returns the product of two numbers 
@@ -42,7 +40,7 @@ consume("Mary","Poppins", greeting);  // Hello Mary Poppins, nice to meet you!
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: The nested function can access the outer functions variables.
 
 
 const external = "I'm outside the function";

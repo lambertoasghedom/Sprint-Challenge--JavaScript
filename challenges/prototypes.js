@@ -33,6 +33,12 @@ let a = new CuboidMaker(2, 5, 8); // 80
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
 
+CuboidMaker.prototype.surfaceArea = function () {
+  return this.length * this.width + this.length * this.height + this.width * this.height;
+}
+
+let b = new CuboidMaker(2, 5, 8); // 66
+
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
   Create a cuboid object that uses the new keyword to use our CuboidMaker constructor

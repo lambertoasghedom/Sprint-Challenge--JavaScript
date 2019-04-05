@@ -145,15 +145,26 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 const largerPopulation = [];
+const lowerPopulation = zooAnimals.filter(function (animal) {
+  if (animal.population < 5) {
+    largerPopulation.push(animal);
+  }  
+})
 console.log(largerPopulation);
 
 /* Request 4: .reduce() 
 
-The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
+The zoos need to know their total animal population across the United States.  
+Find the total population from all the zoos using the .reduce() method.
 
 */
 const populationTotal = 0;
+const reducer = zooAnimals.reduce(function (accumulator ,currentValue) {
+  populationTotal += accumulator + currentValue;
+}, 0)
 console.log(populationTotal);
+
+// will go back to this one.. since `${populationTotal}` is constant, I am having trouble adding to that variable
 
 
 /* 

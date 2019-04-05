@@ -43,12 +43,11 @@ console.log(stegeosaurus.length);
 
 // What time period did tyrannosaurus live in?
 console.log(tyrannosaurus.period);
-
-
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
-
-
+tyrannosaurus.roar = function () {
+  return `"RAWERSRARARWERSARARARRRR!"`;
+}
+console.log(tyrannosaurus.roar());
 // ==== Arrays ====
 
 // Given an array of college graduates.  Complete the following requests WITHOUT using any array methods like .forEach(), .map(), .reduce(), .filter()

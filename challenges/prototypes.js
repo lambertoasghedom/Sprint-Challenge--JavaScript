@@ -34,7 +34,7 @@ const a = new CuboidMaker(2, 5, 8); // 80
 */
 
 CuboidMaker.prototype.surfaceArea = function () {
-  return 2* (this.length * this.width + this.length * this.height + this.width * this.height);
+  return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
 }
 
 const b = new CuboidMaker(2, 5, 8); // 132
